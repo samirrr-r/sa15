@@ -85,35 +85,41 @@ const recipes = {
     };
     
 
-    document.getElementById("wings").addEventListener("click", function() {
-        console.log("Wings clicked")
-        const recipeContainer = document.getElementById("wings-recipe");
-        if (recipeContainer.innerHTML.length!=0) {
-            recipeContainer.innerHTML = "";
-          } 
-          else {
-            recipeContainer.innerHTML = recipes["wings"];
-          }
-    });
-    
-    document.getElementById("salmon").addEventListener("click", function() {
-        console.log("Salmon clicked")
-        const recipeContainer = document.getElementById("salmon-recipe");
-        if (recipeContainer.innerHTML.length!=0) {
-            recipeContainer.innerHTML = "";
-          } 
-          else {
-            recipeContainer.innerHTML = recipes["salmon"];
-          }
-    });
-    
-    document.getElementById("rolls").addEventListener("click", function() {
-        console.log("Rolls clicked")
-        const recipeContainer = document.getElementById("rolls-recipe");
-        if (recipeContainer.innerHTML.length!=0) {
-            recipeContainer.innerHTML = "";
-          } 
-          else {
-            recipeContainer.innerHTML = recipes["rolls"];
-          }
-    });
+document.getElementById("wings").addEventListener("click", function() {
+    console.log("Wings clicked")
+    const recipeContainer = document.getElementById("wings-recipe");
+    if (recipeContainer.innerHTML.length!=0) {
+        recipeContainer.innerHTML = "";
+        } 
+        else {
+        recipeContainer.innerHTML = recipes["wings"];
+        }
+});
+
+document.getElementById("salmon").addEventListener("click", function() {
+    console.log("Salmon clicked")
+    const recipeContainer = document.getElementById("salmon-recipe");
+    if (recipeContainer.innerHTML.length!=0) {
+        recipeContainer.innerHTML = "";
+        } 
+        else {
+        recipeContainer.innerHTML = recipes["salmon"];
+        }
+});
+document.getElementById("rolls").addEventListener("click", function() {
+    console.log("Rolls clicked")
+    const recipeContainer = document.getElementById("rolls-recipe");
+    if (recipeContainer.innerHTML.length!=0) {
+        recipeContainer.innerHTML = "";
+        } 
+        else {
+        recipeContainer.innerHTML = recipes["rolls"];
+        }
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+    console.log("Submit clicked")
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+     
+});
